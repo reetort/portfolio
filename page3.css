@@ -5,7 +5,7 @@ body{
 }
 #wrap{
     width: 1000px;
-    height: 1050px;
+    height: 1250px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -63,8 +63,13 @@ a{
     text-align: center;
 }
 #sd{
-    width: 300px;
+    width: 1000px;
+    height: 400px;
     margin: 0 auto;
+}
+#sd img:hover{
+    opacity: 0.7;
+    
 }
 #none{
     width: 1000px;
