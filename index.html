@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang=ko>
+<head>
+    <meta charset="utf-8">
+    <title> portfolio </title>
+    <link href=index.css
+          rel=stylesheet
+          type="text/css">
+
+          <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+          <script type="text/javascript">
+              $(function(){
+              $('.mov').click(function(){ 
+              var ss = $(this).attr("href");
+              $('html, body').animate({scrollTop:ss});
+              return false;
+              });
+              });
+          </script>
+</head>
+<body> 
+    <div id=wrap>
+
+        <div id=header>
+            <div id=logo>
+               <a href=0 class=mov><img src=images/portfolio.png></a>
+            </div>
+            <div id=menu>
+                <ul>
+                    <li><a href=page1.html>Tools</a></li> <!--포토샵, 프리미어, 애팩 했던 거 짤막하게 올리기-->
+                    <li> <a href=page2.html>Websites</a></li> <!-- 제작했던 웹사이트들 사진 넣기-->
+                    <li><a href=page3.html> Club activity</a></li> <!--동아리랑,.. 뭐 그런 거-->
+            </div>
+        </div>
+
+        <div id=main>
+            <!--기본적으로 이름, 학번, 과 자기소개 하기, 수강했던 수업들도 넣을까?-->
+            
+            <div id=photo>
+            </div>
+            <div id=introduce>
+                <div id=name><br>안은수</div>
+
+                <div id=major>
+                <br><br>전공 : 디지털미디어콘텐츠<br>
+                복수전공 : 디지털인문예술
+                </div>
+
+                
+                <div id=sound>
+                <iframe width="450px" height="100px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/747541975&color=%2384b4cc&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id=footer>
+            <div id=sns><!--유튜브는 학교랑 연결된 거 올리고 나머지는 올리지 말자... 이메일만 적자...-->
+                ajw4619@naver.com
+            </div>
+            <div id=etc>
+                댓글 기능 넣기
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    background-color: rgb(253, 255, 240);
+
+}
+#wrap{
+    width: 1000px;
+    height: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#header{
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgb(253, 255, 240);
+    position: fixed;
+    z-index: 1;
+}
+ul{
+    text-decoration: none;
+    padding-left: 0px;
+}
+li{
+    display: inline;
+    margin: 0px 15px 0px 15px;
+}
+#logo{
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+#menu{
+    width: 1000px;
+    height: 15px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+}
+#menu a{
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+#menu a:hover{
+    color: rgb(175, 175, 175);
+}
+#main{
+    width: 1000px;
+    height: 870px;
+    margin: 250px auto 0px auto;
+}
+#cinema{
+    width: 1000px;
+    height: 380px;
+    color: rgb(106, 138, 117);
+    text-align: center;
+    font-size: 13px;
+}
+#cinema h3{
+    margin: 50px auto 30px auto;
+}
+#cinema video{
+    margin-bottom: 30px;
+}
+#fire{
+    width: 1000px;
+    height: 300px;
+    color: rgb(106, 138, 117);
+    text-align: center;
+    font-size: 13px;
+}
+#fire a{
+    text-decoration: none;
+    color: rgb(106, 138, 117);
+}
+#fire a:hover{
+    color: rgb(161, 194, 173);
+}
+#fire h3{
+    margin: 30px auto 30px auto;
+}
+#fire img{
+    margin-bottom: 30px;
+}

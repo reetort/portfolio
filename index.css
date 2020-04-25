@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    background-color: rgb(253, 255, 240);
+
+}
+#wrap{
+    width: 1000px;
+    height: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#header{
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgb(253, 255, 240);
+    position: fixed;
+}
+ul{
+    text-decoration: none;
+    padding-left: 0px;
+}
+li{
+    display: inline;
+    margin: 0px 15px 0px 15px;
+}
+#logo{
+    width: 1000px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+#menu{
+    width: 1000px;
+    height: 15px;
+    margin: 0 auto;
+    font-size: 13px;
+}
+#main{
+    width: 1000px;
+    height: 780px;
+    margin-top: 200px;
+}
+#photo{
+    width: 463px;
+    height: 463px;
+    margin: 0 auto;
+    background-image: url(images/me.png);
+}
+#introduce{
+    width: 1000px;
+    height: 147px;
+    text-align: center;
+    color: rgb(106, 138, 117);
+}
+#sound{
+    width: 450px;
+    height: 100px;
+    margin: 50px auto 0px auto;
+}
+#name{
+    font-size: 17px;
+}
+#major{
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+#menu a{
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+#menu a:hover{
+    color: rgb(175, 175, 175);
+}
+#footer{
+    width: 1000px;
+    height: 200px;
+}
+#sns{
+    width: 1000px;
+    height: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(106, 138, 117);
+}
