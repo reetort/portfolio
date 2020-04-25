@@ -6,13 +6,30 @@
     <link href=index.css
           rel=stylesheet
           type="text/css">
+
+          <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+  
+          <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+          <script type="text/javascript">
+              $(function(){
+              $('.mov').click(function(){ 
+              var ss = $(this).attr("href");
+              $('html, body').animate({scrollTop:ss});
+              return false;
+              });
+              });
+          </script>
 </head>
 <body> 
     <div id=wrap>
 
         <div id=header>
             <div id=logo>
-               <img src=images/portfolio.png>
+                <a href=0 class=mov>
+                 <img src=images/portfolio.png>   
+                </a>
+               
             </div>
             <div id=menu>
                 <ul>
