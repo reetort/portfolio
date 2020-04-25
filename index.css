@@ -43,10 +43,10 @@ li{
     margin-top: 200px;
 }
 #photo{
-    width: 463px;
-    height: 463px;
+    width: 435px;
+    height: 437px;
     margin: 0 auto;
-    background-image: url(images/me.png);
+    background-image: url(images/me.jpg);
 }
 #introduce{
     width: 1000px;
