@@ -5,7 +5,7 @@ body{
 }
 #wrap{
     width: 1000px;
-    height: 1340px;
+    height: 1400px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -76,7 +76,7 @@ a{
 }
 #footer{
     width: 1000px;
-    height: 300px;
+    height: 360px;
 }
 #sns{
     width: 1000px;
@@ -84,4 +84,8 @@ a{
     text-align: center;
     font-size: 13px;
     color: rgb(106, 138, 117);
+}
+#etc{
+    width: 1000px;
+    height: 340px;
 }
