@@ -32,6 +32,9 @@ li{
     margin: 0 auto;
 
 }
+#logo:hover{
+    opacity: 0.8;
+}
 #menu{
     width: 1000px;
     height: 15px;
