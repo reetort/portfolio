@@ -5,7 +5,7 @@ body{
 }
 #wrap{
     width: 1000px;
-    height: 1600px;
+    height: 1400px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -76,7 +76,7 @@ a{
 }
 #footer{
     width: 1000px;
-    height: 360px;
+    height: 420px;
 }
 #sns{
     width: 1000px;
