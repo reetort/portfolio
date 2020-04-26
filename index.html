@@ -7,17 +7,6 @@
           rel=stylesheet
           type="text/css">
 
-          <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-          <script type="text/javascript">
-              $(function(){
-              $('.mov').click(function(){  
-              var ss = $(this).attr("href");
-              $('html, body').animate({scrollTop:ss});
-              return false;
-              });
-              });
-          </script>
-
           <script type="text/javascript">
             var stmnLEFT = 10; // 오른쪽 여백 
             var stmnGAP1 = 0; // 위쪽 여백 
@@ -40,7 +29,7 @@
              stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed); 
              } 
             function InitializeStaticMenu() {
-             document.getElementById('SIDEMENU').style.right = stmnLEFT + 'px';  //처음에 오른쪽에 위치. 
+             document.getElementById('SIDEMENU').style.left = stmnLEFT + 'px';  //처음에 오른쪽에 위치. 
              document.getElementById('SIDEMENU').style.top = document.body.scrollTop + stmnBASE + 'px'; 
              RefreshStaticMenu();
              }
@@ -48,7 +37,7 @@
 </head>
 <body onload="InitializeStaticMenu();"> 
 
-    <div id=SIDEMENU> <!--wrap 안에다 만들면 안 됨-->
+    <div id=SIDEMENU> 
         <a href=#go><img src=images/sidemenu.png></a>
     </div>
 
