@@ -90,3 +90,10 @@ a{
     width: 1000px;
     height: 400px;
 }
+#SIDEMENU{
+    margin: 0px;
+    padding: 0px;
+    position: absolute; 
+    right: 0px;
+    top: 0px;
+}

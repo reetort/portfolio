@@ -7,9 +7,6 @@
           rel=stylesheet
           type="text/css">
 
-          <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-  
           <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
           <script type="text/javascript">
               $(function(){
@@ -20,15 +17,46 @@
               });
               });
           </script>
+
+          <script type="text/javascript">
+            var stmnLEFT = 10; // 오른쪽 여백 
+            var stmnGAP1 = 0; // 위쪽 여백 
+            var stmnGAP2 = 400; // 스크롤시 브라우저 위쪽과 떨어지는 거리 
+            var stmnBASE = 400; // 스크롤 시작위치 
+            var stmnActivateSpeed = 20; //스크롤을 인식하는 딜레이 (숫자가 클수록 느리게 인식)
+            var stmnScrollSpeed = 10; //스크롤 속도 (클수록 느림)
+            var stmnTimer; 
+            
+            function RefreshStaticMenu() { 
+             var stmnStartPoint, stmnEndPoint; 
+             stmnStartPoint = parseInt(document.getElementById('SIDEMENU').style.top, 10); 
+             stmnEndPoint = Math.max(document.documentElement.scrollTop, document.body.scrollTop) + stmnGAP2; 
+             if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1; 
+             if (stmnStartPoint != stmnEndPoint) { 
+              stmnScrollAmount = Math.ceil( Math.abs( stmnEndPoint - stmnStartPoint ) / 15 ); 
+              document.getElementById('SIDEMENU').style.top = parseInt(document.getElementById('SIDEMENU').style.top, 10) + ( ( stmnEndPoint<stmnStartPoint ) ? -stmnScrollAmount : stmnScrollAmount ) + 'px'; 
+              stmnRefreshTimer = stmnScrollSpeed; 
+              }
+             stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed); 
+             } 
+            function InitializeStaticMenu() {
+             document.getElementById('SIDEMENU').style.right = stmnLEFT + 'px';  //처음에 오른쪽에 위치. 
+             document.getElementById('SIDEMENU').style.top = document.body.scrollTop + stmnBASE + 'px'; 
+             RefreshStaticMenu();
+             }
+           </script>
 </head>
-<body> 
+<body onload="InitializeStaticMenu();"> 
+
+    <div id=SIDEMENU> <!--wrap 안에다 만들면 안 됨-->
+        <a href=page2.html><img src=images/sidemenu.png></a>
+    </div>
+
     <div id=wrap>
 
         <div id=header>
             <div id=logo>
-                <a href="0" class=mov>
-                 <img src=images/portfolio.png>   
-                </a>   
+                 <img src=images/portfolio.png>     
             </div>
 
             <div id=menu>
