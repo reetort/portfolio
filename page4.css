@@ -5,7 +5,7 @@ body{
 }
 #wrap{
     width: 1000px;
-    height: 1200px;
+    height: 1500px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -53,41 +53,14 @@ a{
 }
 #main{
     width: 1000px;
-    height: 870px;
+    height: 1000px;
     margin: 250px auto 0px auto;
-}
-#cinema{
-    width: 1000px;
-    height: 380px;
-    color: rgb(106, 138, 117);
     text-align: center;
     font-size: 13px;
-}
-#cinema h3{
-    margin: 50px auto 30px auto;
-}
-#cinema video{
-    margin-bottom: 30px;
-}
-#fire{
-    width: 1000px;
-    height: 300px;
-    color: rgb(106, 138, 117);
-    text-align: center;
-    font-size: 13px;
-}
-#fire a{
-    text-decoration: none;
     color: rgb(106, 138, 117);
 }
-#fire a:hover{
-    color: rgb(161, 194, 173);
-}
-#fire h3{
-    margin: 30px auto 30px auto;
-}
-#fire img{
-    margin-bottom: 30px;
-    width: 355px;
-    height: 180px;
+#figma{
+    width: 500px;
+    height: 275px;
+    margin: 35px auto 40px auto;
 }
