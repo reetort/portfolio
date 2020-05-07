@@ -5,7 +5,7 @@ body{
 }
 #wrap{
     width: 1000px;
-    height: 1000px;
+    height: 1450px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -53,14 +53,20 @@ a{
 }
 #main{
     width: 1000px;
-    height: 600px;
+    height: 700px;
     margin: 250px auto 0px auto;
     text-align: center;
     font-size: 13px;
     color: rgb(106, 138, 117);
 }
+
 #figma{
     width: 500px;
     height: 275px;
+    margin: 35px auto 40px auto;
+}
+#voyant{
+    width: 356px;
+    height: 358px;
     margin: 35px auto 40px auto;
 }
